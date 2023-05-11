@@ -12,7 +12,7 @@ const HomeComponent = () => {
         <div className="heading_2">Home Component 2</div>
         <div className="heading_3">Home Component 3</div>
         <div className="heading_4">Home Component 4</div>
-        <div className="heading_4">Home Component 4</div>
+        <div className="heading_4">Home Component 5</div>
       </div>
     </React.Fragment>
   );
