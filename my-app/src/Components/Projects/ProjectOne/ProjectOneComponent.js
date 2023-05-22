@@ -1,9 +1,11 @@
 import React from "react";
+import "./ProjectOneComponent.scss";
+
 const ProjectOneComponent = () => {
   return (
     <React.Fragment>
       <div className="main_div1">
-        <div className="heading_11">Hii</div>
+        Project One
       </div>
     </React.Fragment>
   );
