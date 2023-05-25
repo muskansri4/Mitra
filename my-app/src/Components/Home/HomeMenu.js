@@ -1,24 +1,24 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./HomeComponent.scss";
-import Button from "react-bootstrap/Button";
 
 const HomeMenu = () => {
   return (
     <>
       <div className="mainMenu_div">
-        <Button variant="primary">
+        <button type="button" class="btn btn-outline-info btn-sm">
           {" "}
           <NavLink exact activeClassName="active_class" to={"/a"}>
             ProjectOneComponent
           </NavLink>
-        </Button>{" "}
-        <Button variant="secondary">
+        </button>
+        {" "}
+        <button type="button" class="btn btn-outline-info btn-sm">
           {" "}
           <NavLink exact activeClassName="active_class" to={"/b"}>
             ProjectTwoComponent
           </NavLink>
-        </Button>{" "}
+        </button>
       </div>
     </>
   );

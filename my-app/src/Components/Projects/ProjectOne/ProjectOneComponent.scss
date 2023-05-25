@@ -1,4 +1,4 @@
-.main_div1{
+.main_div1 {
     background-color: #ebcfcf;
     color: white;
     height: 69vh;
@@ -8,4 +8,45 @@
     margin-top: 15px;
     border-radius: 14px;
     border: 2px solid white;
+}
+
+.section_container {
+    background-color: #cfebd6;
+    height: 87vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 11px;
+    margin-top: -10px;
+}
+
+.section_1 {
+    // background-color: rgb(2, 71, 71);
+    height: 80px;
+    width: 100%;
+}
+
+.section_2 {
+    // background-color: rgb(126, 117, 66);
+    height: 80px;
+    width: 100%;
+}
+
+.section_3 {
+    height: 205px;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 54px;
+}
+
+.section_4 {
+    // background-color: rgb(212, 44, 92);
+    height: 80px;
+    width: 100%;
+}
+.search{
+    background: transparent;
+    border: none;
+    border-radius: 15px;
 }
