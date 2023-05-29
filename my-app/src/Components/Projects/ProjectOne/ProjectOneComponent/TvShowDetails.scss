@@ -1,0 +1,101 @@
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    font-family: inherit;
+}
+
+.rating {
+    font-weight: 100;
+    font-size: 20px;
+    font-family: system-ui;
+}
+
+
+.details:hover {
+    overflow-y: auto;
+}
+
+.details {
+    font-family: inherit;
+    font-weight: 100;
+    font-size: 20px;
+    height: 120px;
+    overflow-y: hidden;
+    margin-top: 10px;
+}
+
+.rating_container {
+    display: flex;
+}
+
+.rating {
+    margin-top: 3px;
+    margin-left: 5px;
+}
+
+.logo_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 11px;
+}
+
+.logo_img img {
+    height: 62px;
+    width: 61px;
+    border-radius: 37px;
+}
+
+.logo_subtitle {
+    margin-top: 16px;
+    margin-left: 4px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.recommend_container {
+    cursor: pointer;
+    width: 15vw;
+    margin: 8px;
+
+}
+
+.recommend_img img {
+    height: 115px;
+    border-radius: 28px;
+}
+
+.recommend_title {
+    font-size: 16px;
+    background-color: #000000;
+    width: 15vw;
+    border-radius: 28px;
+
+}
+
+.RecommendList_List:hover {
+    overflow: overlay;
+}
+
+.RecommendList_List {
+    display: flex;
+    overflow-x: hidden;
+
+}
+
+.search_box {
+    background-color: transparent;
+    border-radius: 17px;
+    border: solid 1px;
+    height: 5vh;
+    width: 52vh;
+    margin-top: 22px;
+    margin-left: 80px;
+    color: darkgrey;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(253, 253, 253);
+    opacity: 1; /* Firefox */
+    font-family: inherit;
+    font-size: 18px;
+  }

@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Mouse out of scrollbar */ 
+::-webkit-scrollbar{
+  height: 14px;
+  width: 4px;
+  background: transparent;
+}
+
+/* Mouse out on horizontal scrollbar */ 
+::-webkit-scrollbar-thumb:horizontal{
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 10px;
+}
