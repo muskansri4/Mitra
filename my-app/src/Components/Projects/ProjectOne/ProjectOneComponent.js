@@ -25,6 +25,7 @@ const ProjectOneComponent = () => {
 
   async function fetchPopulars() {
     const popularTVShowList = await TvShowApi.fetchPopulars();
+    console.log(popularTVShowList)
     if (popularTVShowList.length > 0) {
       setcurrTVShow(popularTVShowList[0]);
     }
@@ -38,10 +39,16 @@ const ProjectOneComponent = () => {
       setRecommendationList(recommendationListResp.slice(0, 10));
     }
   }
+
+  async function fetchByTitle(title) {
+    const searchResp = await TvShowApi.fetchByTitle(title);
+    if (searchResp.length > 0) {
+      setcurrTVShow(searchResp[0]);
+    }
+  }
   const updateCurrentTvShow = (recommended_clicked) => {
     setcurrTVShow(recommended_clicked);
   };
-  // console.log(recommendationList);
   return (
     <React.Fragment>
       <div className="main_div1">
@@ -67,7 +74,7 @@ const ProjectOneComponent = () => {
               </div>
               <div class="col-6">
                 <div className="section_2">
-                  <Search />
+                  <Search onClick={fetchByTitle} />
                 </div>
               </div>
               <div class="col-12">

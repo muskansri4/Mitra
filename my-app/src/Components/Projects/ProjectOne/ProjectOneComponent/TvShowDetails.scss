@@ -33,6 +33,14 @@
     margin-left: 5px;
 }
 
+.air_date{
+    font-family: inherit;
+    font-weight: 100;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 3px;
+
+}
 .logo_container {
     display: flex;
     flex-direction: row;
@@ -83,19 +91,29 @@
 }
 
 .search_box {
-    background-color: transparent;
-    border-radius: 17px;
-    border: solid 1px;
-    height: 5vh;
-    width: 52vh;
+
+    border-radius: 30px;
+    background-color: #d9d9d96e;
+    height: 30px;
+    color: white;
+    font-weight: 100;
+    font-size: 20px;
+    width: 100%;
+    border-color: transparent;
+    padding: 18px 18px 18px 50px;
     margin-top: 22px;
-    margin-left: 80px;
-    color: darkgrey;
+
+
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
     color: rgb(253, 253, 253);
-    opacity: 1; /* Firefox */
+    opacity: 1;
     font-family: inherit;
     font-size: 18px;
-  }
+}
+
+search_box:focus {
+    outline-width: 0;
+    border: solid .5px white;
+}
