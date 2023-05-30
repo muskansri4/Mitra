@@ -15,10 +15,11 @@ export default function Recommendation({ recommendationList,onClick_item }) {
             alt="recommendationList.name"
           ></img>
         </div>
-        <div className="recommend_title">
-          {recommendationList.name.length > titleLen
+        <div className="recommend_title_box">
+        <div className="title_text">          {recommendationList.name.length > titleLen
             ? recommendationList.name.slice(0, titleLen) + " ...."
-            : recommendationList.name}
+            : recommendationList.name}</div>
+
         </div>
       </div>
     </React.Fragment>

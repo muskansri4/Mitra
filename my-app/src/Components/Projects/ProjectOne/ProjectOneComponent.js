@@ -25,7 +25,6 @@ const ProjectOneComponent = () => {
 
   async function fetchPopulars() {
     const popularTVShowList = await TvShowApi.fetchPopulars();
-    console.log(popularTVShowList)
     if (popularTVShowList.length > 0) {
       setcurrTVShow(popularTVShowList[0]);
     }
@@ -68,7 +67,7 @@ const ProjectOneComponent = () => {
                   <Logo
                     img={Tv_Icon}
                     title={"TV show"}
-                    subtitle={"Find your fav show details"}
+                    subtitle={"Know Your Show"}
                   />
                 </div>
               </div>

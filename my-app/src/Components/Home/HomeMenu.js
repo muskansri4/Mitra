@@ -9,7 +9,7 @@ const HomeMenu = () => {
         <button type="button" class="btn btn-outline-info btn-sm">
           {" "}
           <NavLink exact activeClassName="active_class" to={"/a"}>
-            ProjectOneComponent
+            Know your Show
           </NavLink>
         </button>
         {" "}

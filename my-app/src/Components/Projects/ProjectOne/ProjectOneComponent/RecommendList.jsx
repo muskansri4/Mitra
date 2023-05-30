@@ -7,7 +7,7 @@ export default function RecommendList({ tvShowList, onClickList }) {
   });
   return (
     <React.Fragment>
-      <div className="RecommendList_title">You would Like.....</div>
+      <div className="RecommendList_title">Recommendations > </div>
       <div className="RecommendList_List">
         {filtered.map((element) => {
           return (

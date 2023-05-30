@@ -1,7 +1,8 @@
 .title {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 28px;
     font-family: inherit;
+    color: #ffc900;
 }
 
 .rating {
@@ -33,14 +34,27 @@
     margin-left: 5px;
 }
 
-.air_date{
+.air_date {
     font-family: inherit;
     font-weight: 100;
     font-size: 20px;
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 3px;
+}
+
+.origin {
+    @extend .air_date;
+}
+
+.language {
+    @extend .air_date;
 
 }
+
+.media {
+    @extend .air_date;
+}
+
 .logo_container {
     display: flex;
     flex-direction: row;
@@ -67,17 +81,31 @@
 
 }
 
-.recommend_img img {
-    height: 115px;
-    border-radius: 28px;
+.recommend_container:hover {
+    -ms-transform: scale(1.5);
+    /* IE 9 */
+    -webkit-transform: scale(1.5);
+    /* Safari 3-8 */
+    transform: scale(1.1);
 }
 
-.recommend_title {
+.recommend_img img {
+    height: 115px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.recommend_title_box {
     font-size: 16px;
     background-color: #000000;
     width: 15vw;
-    border-radius: 28px;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
 
+}
+
+.title_text {
+    margin-left: 15px;
 }
 
 .RecommendList_List:hover {
