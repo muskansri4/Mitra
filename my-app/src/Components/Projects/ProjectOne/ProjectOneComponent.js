@@ -12,14 +12,24 @@ import Search from "./ProjectOneComponent/Search";
 const ProjectOneComponent = () => {
   const [currTVShow, setcurrTVShow] = useState();
   const [recommendationList, setRecommendationList] = useState([]);
+  const [show, setshow] = useState(false);
 
   useEffect(() => {
     fetchPopulars();
+
   }, []);
+  function showSpinner() {
+    setshow(true);
+  }
+  function hideSpinner() {
+    setshow(false);
+  }
 
   useEffect(() => {
     if (currTVShow) {
       fetchRecommendations(currTVShow.id);
+      setTimeout(showSpinner, 2000);
+      setTimeout(hideSpinner, 5000);
     }
   }, [currTVShow]);
 
@@ -67,7 +77,7 @@ const ProjectOneComponent = () => {
                   <Logo
                     img={Tv_Icon}
                     title={"TV show"}
-                    subtitle={"Know Your Show"}
+                    subtitle={"KNOW YOUR SHOW"}
                   />
                 </div>
               </div>
@@ -87,6 +97,7 @@ const ProjectOneComponent = () => {
                     <RecommendList
                       onClickList={updateCurrentTvShow}
                       tvShowList={recommendationList}
+                      showSpinner={show}
                     />
                   )}
                 </div>

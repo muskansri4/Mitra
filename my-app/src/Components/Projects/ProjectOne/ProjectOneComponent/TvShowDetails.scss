@@ -74,6 +74,25 @@
     margin-left: 4px;
     font-family: inherit;
     font-size: 18px;
+    background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
 }
 
 .recommend_container {
@@ -85,9 +104,7 @@
 
 .recommend_container:hover {
     -ms-transform: scale(1.5);
-    /* IE 9 */
     -webkit-transform: scale(1.5);
-    /* Safari 3-8 */
     transform: scale(1.1);
 }
 
@@ -119,10 +136,12 @@
     overflow-x: hidden;
 
 }
-.search_container{
+
+.search_container {
     display: flex;
     flex-direction: row;
 }
+
 .search_box {
 
     border-radius: 30px;
@@ -138,14 +157,16 @@
 
 
 }
-.clear_btn{
+
+.clear_btn {
     margin-top: 22px;
     // background-color: #d9d9d96e;
     background-color: transparent;
 
 
 }
-.clear_btn button{
+
+.clear_btn button {
     background-color: transparent;
     border-radius: 35px;
     color: white;
@@ -182,6 +203,7 @@
 .air_date:hover .air_date_text {
     visibility: visible;
 }
+
 .origin .origin_text {
     visibility: hidden;
     height: auto;
@@ -200,6 +222,7 @@
 .origin:hover .origin_text {
     visibility: visible;
 }
+
 .language .language_text {
     visibility: hidden;
     height: auto;
@@ -218,6 +241,7 @@
 .language:hover .language_text {
     visibility: visible;
 }
+
 .media .media_text {
     visibility: hidden;
     height: auto;
@@ -236,6 +260,7 @@
 .media:hover .media_text {
     visibility: visible;
 }
+
 .star_icon .star_icon_text {
     visibility: hidden;
     height: auto;
@@ -253,4 +278,18 @@
 
 .star_icon:hover .star_icon_text {
     visibility: visible;
+}
+
+.recommendation_container {
+    display: flex;
+}
+
+.RecommendList_title {
+    margin-left: 16px;
+}
+
+.spinner {
+    // background-color: red;
+    margin-right: -10px;
+
 }

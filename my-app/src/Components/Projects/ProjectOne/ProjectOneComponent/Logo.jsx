@@ -7,9 +7,6 @@ export default function Logo(props) {
       <div className="logo_img">
         <img src={props.img} alt="logo" />
       </div>
-
-      {/* <div className="logo_title">{props.title}</div> */}
-      
       <div className="logo_subtitle">{props.subtitle}</div>
     </div>
   );
