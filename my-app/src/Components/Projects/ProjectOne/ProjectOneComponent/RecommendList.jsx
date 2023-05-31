@@ -1,5 +1,6 @@
 import React from "react";
 import Recommendation from "./Recommendation";
+import { AiOutlineRight } from "react-icons/ai";
 
 export default function RecommendList({ tvShowList, onClickList }) {
   const filtered = tvShowList.filter(function (e) {
@@ -7,7 +8,7 @@ export default function RecommendList({ tvShowList, onClickList }) {
   });
   return (
     <React.Fragment>
-      <div className="RecommendList_title">Recommendations > </div>
+      <div className="RecommendList_title">Recommendations  <AiOutlineRight/> </div>
       <div className="RecommendList_List">
         {filtered.map((element) => {
           return (

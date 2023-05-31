@@ -16,13 +16,26 @@ export default function TvShowDetails({ tvShow }) {
       <div className="rating_container">
         <div className="star_icon">
           <Rating ratingData={ratingRes} />
+          <span class="star_icon_text">{ratingRes && ratingRes.toFixed(1)} / 5</span>
+
         </div>
-        <div className="air_date">{tvShow.first_air_date.slice(0, 4)}</div>
-        <div className="origin">{countries[tvShow.origin_country].name}</div>
+        <div className="air_date">
+          {tvShow.first_air_date.slice(0, 4)}{" "}
+          <span class="air_date_text">On-Air year</span>
+        </div>
+        <div className="origin">
+          {countries[tvShow.origin_country].name}{" "}
+          <span class="origin_text">Country</span>
+        </div>
         <div className="language">
           {languageNames.of(tvShow.original_language)}
+          <span class="language_text">Language</span>
         </div>
-        <div className="media">{tvShow.media_type && tvShow.media_type.toUpperCase()}</div>
+        <div className="media">
+          {tvShow.media_type && tvShow.media_type.toUpperCase()}
+          <span class="media_text">Media</span>
+
+        </div>
       </div>
       <div className="details">
         {tvShow.overview.length > maxLenOverview

@@ -1,3 +1,4 @@
+import { Button } from "bootstrap";
 import React, { useState } from "react";
 
 export default function Search({ onClick }) {
