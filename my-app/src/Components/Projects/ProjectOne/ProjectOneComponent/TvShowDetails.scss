@@ -27,6 +27,7 @@
 
 .rating_container {
     display: flex;
+    margin-left: 10px;
 }
 
 .rating {
@@ -292,4 +293,11 @@
     // background-color: red;
     margin-right: -10px;
 
+}
+.details_container {
+    background-color: #a288886e;
+    border: 1px solid #0800006e;
+    border-radius: 22px;
+    width: 42vw;
+    height: 6vh;
 }
