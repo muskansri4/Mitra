@@ -11,6 +11,8 @@ export default function TvShowDetails({ tvShow }) {
   const languageNames = new Intl.DisplayNames(["en"], {
     type: "language",
   });
+  const details_text= tvShow.name + "is nice show to watch, It was on air on " + tvShow.media_type+ "on date "
+  + tvShow.first_air_date + " It is in " + languageNames.of(tvShow.original_language) + " language. Its fun to watch, It will entertain the audiences."
 
   return (
     <React.Fragment>
@@ -56,9 +58,9 @@ export default function TvShowDetails({ tvShow }) {
         </div>
       </div>
       <div className="details">
-        {tvShow.overview.length > maxLenOverview
+        {tvShow.overview ? (tvShow.overview.length > maxLenOverview
           ? tvShow.overview.slice(0, maxLenOverview) + "  ....  "
-          : tvShow.overview}
+          : tvShow.overview) : details_text}
       </div>
     </React.Fragment>
   );
