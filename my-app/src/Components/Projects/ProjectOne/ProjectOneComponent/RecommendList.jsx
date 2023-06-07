@@ -3,11 +3,15 @@ import Recommendation from "./Recommendation";
 import { TfiAngleRight } from "react-icons/tfi";
 import Spinner from "react-bootstrap/Spinner";
 
-export default function RecommendList({ tvShowList, onClickList ,showSpinner}) {
+export default function RecommendList({
+  tvShowList,
+  onClickList,
+  showSpinner,
+}) {
   const filtered = tvShowList.filter(function (e) {
     return e.backdrop_path != null;
   });
-  
+
   return (
     <React.Fragment>
       <div className="recommendation_container">
@@ -16,9 +20,10 @@ export default function RecommendList({ tvShowList, onClickList ,showSpinner}) {
             <Spinner animation="grow" variant="warning" size="sm" />
           ) : null}
         </div>
-        <div className="RecommendList_title">
-          Recommendations
-          <TfiAngleRight />
+        <div className="RecommendList_title_box">
+          <div className="RecommendList_title_text">
+            Recommendations <TfiAngleRight />
+          </div>
         </div>
       </div>
       <div className="RecommendList_List">

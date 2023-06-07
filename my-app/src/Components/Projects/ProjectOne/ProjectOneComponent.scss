@@ -57,3 +57,40 @@
 .TvShowItem {
     margin-bottom: 21px;
 }
+
+@media only screen and (max-width: 768px) {
+    .main_div1 {
+        background-color: #ebcfcf;
+        color: white;
+        height: 69vh;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: 28px;
+        margin-top: 15px;
+        border-radius: 14px;
+        border: 2px solid white;
+    }
+    .section_1 {
+        // background-color: rgb(2, 71, 71);
+        height: 100%;
+        width: 100%;
+    }
+
+    .section_2 {
+        // background-color: rgb(126, 117, 66);
+        height: 100%;
+        width: 100%;
+    }
+    .section_3 {
+        height: auto;
+        width: auto;
+    }
+    .section_4 {
+        height: auto;
+        width: auto;
+        margin-top: 25px;
+    }
+
+
+
+}

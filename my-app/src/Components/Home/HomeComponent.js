@@ -9,6 +9,7 @@ import HomeMenu from "./HomeMenu";
 const HomeComponent = () => {
   return (
     <React.Fragment>
+    <div className="homecomponent_container">
       <HomeMenu/>
         <Routes>
           <Route exact path="/" Component={ProjectHelpComponent} />
@@ -17,7 +18,7 @@ const HomeComponent = () => {
           <Route exact path="/c" Component={ProjectHelpComponent} />
           <Route exact path="/d" Component={ProjectHelpComponent} />
         </Routes>
-   
+        </div>
     </React.Fragment>
   );
 };

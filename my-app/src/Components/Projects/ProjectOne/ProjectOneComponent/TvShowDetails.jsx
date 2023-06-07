@@ -3,6 +3,7 @@ import "./TvShowDetails.scss";
 import Rating from "./Rating";
 import { countries } from "country-data";
 import { TiMediaRecord } from "react-icons/ti";
+import { BsFillPersonFill } from "react-icons/bs";
 
 export default function TvShowDetails({ tvShow }) {
   const ratingRes = tvShow.vote_average / 2;
@@ -17,14 +18,16 @@ export default function TvShowDetails({ tvShow }) {
       <div className="details_container">
         <div className="rating_container">
           <div className="star_icon">
-            <Rating ratingData={ratingRes} />
+            <span className="star_icon_res">
+              <Rating ratingData={ratingRes} />
+            </span>
             <span class="star_icon_text">
               {ratingRes && ratingRes.toFixed(1)} / 5
             </span>
+            <span class="star_icon_popup">Rating</span>
           </div>
-          <div className="dot_1">
-            <TiMediaRecord />
-          </div>
+        </div>
+        <div className="points_container">
           <div className="air_date">
             {tvShow.first_air_date.slice(0, 4)}{" "}
             <span class="air_date_text">On-Air year</span>
@@ -47,7 +50,7 @@ export default function TvShowDetails({ tvShow }) {
             <TiMediaRecord />
           </div>
           <div className="media">
-            {tvShow.media_type && tvShow.media_type.toUpperCase()}
+            {tvShow.media_type ? tvShow.media_type.toUpperCase() : "TV"}
             <span class="media_text">Media</span>
           </div>
         </div>
