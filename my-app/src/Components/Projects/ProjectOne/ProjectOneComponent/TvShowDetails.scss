@@ -1,6 +1,6 @@
 .title {
     font-weight: 500;
-    font-size: 35px;
+    font-size: 28px;
     font-family: inherit;
     color: #ffc900;
     margin-left: 10px;
@@ -32,15 +32,14 @@
     background-color: #a288886e;
     border: 1px solid #0800006e;
     border-radius: 22px;
-    width: fit-content;
+    width: fit-content;    
     margin-bottom: 2px;
     font-size: 20px;
 }
 
-.star_icon_res {
+.star_icon_res{
     padding: 12px;
 }
-
 .air_date {
     font-family: inherit;
     font-weight: 100;
@@ -105,7 +104,7 @@
 .recommend_container {
     cursor: pointer;
     width: 15vw;
-    margin: 18px;
+    margin: 8px;
 
 }
 
@@ -124,10 +123,10 @@
 .recommend_title_box {
     font-size: 16px;
     background-color: #000000;
-    width: 109%;
-    margin: 0px;
+    width: 15vw;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
+
 }
 
 .title_text {
@@ -210,7 +209,6 @@
 .star_icon:hover .star_icon_popup {
     visibility: visible;
 }
-
 .air_date .air_date_text {
     visibility: hidden;
     height: auto;
@@ -310,12 +308,10 @@
     display: flex;
     flex-direction: row;
 }
-
-.RecommendList_title_text {
+.RecommendList_title_text{
     margin-left: 10px;
 
 }
-
 .spinner {
     // background-color: red;
     margin-right: -10px;
@@ -372,9 +368,7 @@
         width: auto;
         height: auto;
         margin-right: 0px;
-        margin-top: 65px;
     }
-
     .RecommendList_title_box {
         margin-left: 16px;
         background-color: #a288886e;
@@ -383,41 +377,17 @@
         width: -moz-fit-content;
         width: fit-content;
     }
-
+    
     .recommend_container {
         cursor: pointer;
         width: 50vw;
         margin: 8px;
     }
-
     .recommend_title_box {
         font-size: 16px;
         background-color: #000000;
-        width: 50vw;
+        width: 52vw;
         border-bottom-left-radius: 24px;
         border-bottom-right-radius: 24px;
-    }
-
-    .details {
-        margin-top: 25px;
-        font-size: 25px;
-        /* background-color: red; */
-        height: 192px;
-    }
-
-    .RecommendList_List {
-        margin-top: 18px;
-    }
-
-    .recommendation_container {
-        margin-top: 75px;
-    }
-
-    .rating_container {
-        font-size: 22px;
-    }
-
-    .points_container {
-        font-size: 22px;
     }
 }
